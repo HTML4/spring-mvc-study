@@ -18,6 +18,8 @@
        </context:component-scan> 
        <!-- 注解驱动 -->   
        <mvc:annotation-driven></mvc:annotation-driven>
+       <!-- 静态资源处理， css， js， imgs -->
+		<mvc:resources mapping="/resources/**" location="/resources/" />
        <!-- 过滤静态资源 --> 
         <!--<mvc:resources location="/imags/" mapping="/imags/**"></mvc:resources>   -->  
        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">     
