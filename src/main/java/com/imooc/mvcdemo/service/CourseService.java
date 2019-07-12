@@ -2,10 +2,9 @@ package com.imooc.mvcdemo.service;
 
 import org.springframework.stereotype.Service;
 
+import com.imooc.mvcdemo.model.Course;
+
 @Service
-public class CourseService {
-	private String name;
-	public void add() {
-		System.out.println("courseService");
-	}
+public interface CourseService {
+	Course getCoursebyId(Integer courseId);
 }
